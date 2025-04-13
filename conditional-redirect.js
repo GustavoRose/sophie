@@ -4,7 +4,7 @@ exports.handler = async (event, context) => {
   // Se houver referer E ele não for do seu próprio domínio
   if (referer && !referer.includes('seusite.com')) {
     return {
-      statusCode: 301,
+      statusCode: 302,
       headers: {
         Location: 'https://cheiroderosa.com.br/',
       },
